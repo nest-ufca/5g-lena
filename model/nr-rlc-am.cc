@@ -1644,7 +1644,7 @@ NrRlcAm::DoReportBufferStatus()
         retxQueueHolDelay = Seconds(0);
     }
 
-    NrMacSapProvider::ReportBufferStatusParameters r;
+    NrMacSapProvider::ReportBufferStatusParameters r{};
     r.rnti = m_rnti;
     r.lcid = m_lcid;
     r.txQueueSize = m_txonBufferSize;
