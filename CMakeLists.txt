@@ -457,6 +457,7 @@ set(test_sources
     test/nr-uplink-power-control-test.cc
     test/nr-power-allocation.cc
     test/nr-test-harq.cc
+    test/nr-test-harq-flush.cc
     utils/traffic-generators/test/traffic-generator-test.cc
     test/system-scheduler-test-qos.cc
     test/nr-test-entities.cc

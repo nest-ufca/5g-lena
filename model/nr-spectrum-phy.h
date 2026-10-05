@@ -600,6 +600,9 @@ class NrSpectrumPhy : public SpectrumPhy
     void NotifyTxDataTrace(Time duration) const;
 
   private:
+    friend class NrSpectrumPhyHarqFlushTestCase;
+    friend class NrHarqFlushBlerTestCase;
+
     std::vector<MimoSinrChunk>
         m_mimoSinrPerceived; //!< received SINR values during data reception for TB decoding, to
                              //!< replace m_sinrPerceived for all (MIMO and SISO) receivers
